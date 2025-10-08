@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://img.icons8.com/color/480/notion--v1.png",
+    "title": "Aurora Vibe",
+    "companyName": "Nexlify Studios",
+    "id": 1,
+    "description": "Immerse yourself in a mesmerizing music visualizer with AI-driven light patterns.",
+    "size": 85,
+    "reviews": 12450,
+    "ratingAvg": 4.8,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 9000 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/480/shazam.png",
+    "title": "Velvet Horizon",
+    "companyName": "StellarLabs",
+    "id": 2,
+    "description": "Luxurious meditation app with bespoke ambient soundscapes.",
+    "size": 120,
+    "reviews": 8750,
+    "ratingAvg": 4.7,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/480/workspace-one.png",
+    "title": "Neon Sculpt",
+    "companyName": "ArtisanCode",
+    "id": 3,
+    "description": "Create stunning 3D art with neon glow effects.",
+    "size": 200,
+    "reviews": 15600,
+    "ratingAvg": 4.9,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 11900 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/480/goodnotes.png",
+    "title": "Prism Dream",
+    "companyName": "LuxeTech",
+    "id": 4,
+    "description": "Photo editor with prismatic filters and crystal-inspired overlays.",
+    "size": 150,
+    "reviews": 9800,
+    "ratingAvg": 4.6,
+    "downloads": 410000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 6400 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/bubbles/100/notion.png",
+    "title": "Obsidian Flow",
+    "companyName": "DarkPulse Creations",
+    "id": 5,
+    "description": "Productivity app with sleek, obsidian-themed interface.",
+    "size": 90,
+    "reviews": 13400,
+    "ratingAvg": 4.8,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 9750 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/bubbles/100/zalo.png",
+    "title": "Sapphire Sky",
+    "companyName": "AetherWorks",
+    "id": 6,
+    "description": "Weather app with sapphire-hued visuals and real-time animations.",
+    "size": 70,
+    "reviews": 7200,
+    "ratingAvg": 4.5,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 4500 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/dusk/64/ibis-paint-x.png",
+    "title": "Lunar Pulse",
+    "companyName": "Moonlit Labs",
+    "id": 7,
+    "description": "Fitness tracking app with a celestial-inspired interface.",
+    "size": 110,
+    "reviews": 11000,
+    "ratingAvg": 4.7,
+    "downloads": 390000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 7600 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/officel/80/snapchat-squared.png",
+    "title": "Crystal Vault",
+    "companyName": "SecureSphere",
+    "id": 8,
+    "description": "Premium password manager with crystalline UI.",
+    "size": 60,
+    "reviews": 8900,
+    "ratingAvg": 4.9,
+    "downloads": 340000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 6950 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/doodle/96/viber.png",
+    "title": "Gilded Notes",
+    "companyName": "OpulentApps",
+    "id": 9,
+    "description": "Note-taking app with a luxurious gold-accented interface.",
+    "size": 80,
+    "reviews": 10500,
+    "ratingAvg": 4.6,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/bubbles/100/piccollage.png",
+    "title": "Ember Glow",
+    "companyName": "FlareTech",
+    "id": 10,
+    "description": "Reading app with a warm, ember-inspired interface.",
+    "size": 95,
+    "reviews": 9400,
+    "ratingAvg": 4.7,
+    "downloads": 370000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 550 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 6500 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/doodle/96/pages.png",
+    "title": "Onyx Wave",
+    "companyName": "TideCore",
+    "id": 11,
+    "description": "Podcast app with a fluid, onyx-themed design.",
+    "size": 100,
+    "reviews": 12300,
+    "ratingAvg": 4.8,
+    "downloads": 480000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 9000 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/96/shazam.png",
+    "title": "Amethyst Gaze",
+    "companyName": "VisionCraft",
+    "id": 12,
+    "description": "AR app with amethyst-inspired visuals.",
+    "size": 180,
+    "reviews": 16700,
+    "ratingAvg": 4.9,
+    "downloads": 620000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 13050 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/bubbles/100/plant-nanny.png",
+    "title": "Ivory Serenity",
+    "companyName": "CalmVibe Studio",
+    "id": 13,
+    "description": "Sleep aid app with ivory-toned visuals.",
+    "size": 75,
+    "reviews": 8200,
+    "ratingAvg": 4.6,
+    "downloads": 310000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 5350 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/doodle/96/apple-tips.png",
+    "title": "Quartz Vision",
+    "companyName": "ClarityApps",
+    "id": 14,
+    "description": "Journaling app with a crystalline, quartz-inspired design.",
+    "size": 85,
+    "reviews": 9900,
+    "ratingAvg": 4.7,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 6950 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/doodle/96/zalo.png",
+    "title": "Rose Quartz",
+    "companyName": "BlushTech",
+    "id": 15,
+    "description": "Self-care app with rose quartz-inspired aesthetics.",
+    "size": 90,
+    "reviews": 11500,
+    "ratingAvg": 4.8,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 550 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 8100 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/plasticine/100/itunes--v1.png",
+    "title": "Titanium Flow",
+    "companyName": "MetalWave",
+    "id": 16,
+    "description": "Music mixing app with metallic interface elements.",
+    "size": 120,
+    "reviews": 12500,
+    "ratingAvg": 4.7,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 8950 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/bubbles/100/instagram-new--v2.png",
+    "title": "Emerald Horizon",
+    "companyName": "GreenWave Studios",
+    "id": 17,
+    "description": "Eco-friendly tracking app with vivid emerald UI.",
+    "size": 110,
+    "reviews": 10300,
+    "ratingAvg": 4.6,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 8300 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/144/ms-one-note.png",
+    "title": "Obsidian Notes",
+    "companyName": "DarkMatter Apps",
+    "id": 18,
+    "description": "Note-taking app with dark, premium UI aesthetics.",
+    "size": 100,
+    "reviews": 9700,
+    "ratingAvg": 4.7,
+    "downloads": 390000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 6850 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/color/144/launch-box.png",
+    "title": "Golden Hour",
+    "companyName": "SunsetTech",
+    "id": 19,
+    "description": "Photography app with golden-toned filters and effects.",
+    "size": 130,
+    "reviews": 13600,
+    "ratingAvg": 4.8,
+    "downloads": 520000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 9200 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/pin/100/line-me.png",
+    "title": "Celestial Path",
+    "companyName": "StarryApps",
+    "id": 20,
+    "description": "Astronomy app with a stunning cosmic interface.",
+    "size": 140,
+    "reviews": 14500,
+    "ratingAvg": 4.9,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 10250 }
+    ]
+  }
+]
