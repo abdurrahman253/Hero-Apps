@@ -14,13 +14,23 @@ const Apps = () => {
 
   return (
     <div className="p-5 max-w-7xl mx-auto">
+     {/* Title + Subtitle */}
+      <div className="text-center max-w-2xl mx-auto mt-10 px-4">
+         <h1 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent leading-tight tracking-wide">
+             Our All Applications
+        </h1>
+      <p className="text-gray-600 text-base md:text-lg mt-4 font-medium leading-relaxed">
+         Discover innovative apps built with precision, performance, and purpose.  
+         Engineered for millions — tailored for your everyday experience.
+      </p>
+
+      </div>
+
+
       {/* Header + Search */}
-      <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
-        <h1 className="text-3xl font-semibold">
-          All Apps{" "}
-          <span className="text-sm text-gray-500">
-            ({searchedApps.length}) Apps Found
-          </span>
+      <div className="flex flex-col md:flex-row justify-between items-center mt-8 mb-6 gap-4">
+        <h1 className="text-2xl font-semibold">
+         ({searchedApps.length}) Apps Found
         </h1>
 
         <input
