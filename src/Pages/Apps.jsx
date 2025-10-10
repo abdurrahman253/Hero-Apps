@@ -65,7 +65,7 @@ const Apps = () => {
       ) : searchedApps.length === 0 ? (
         <div className="flex flex-col items-center justify-center text-center py-16">
           <img
-            src="/src/assets/App-Error.png"
+            src="/App-Error.png"
             alt="No Apps Found"
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain mb-6 animate-fadeIn"
           />
