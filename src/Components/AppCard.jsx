@@ -1,12 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FiDownload } from "react-icons/fi";
 import { IoMdStar } from "react-icons/io";
 
 const AppCard = ({ app }) => {
-  const { title, image, ratingAvg, downloads } = app;
+  const { id, title, image, ratingAvg, downloads } = app;
 
   return (
-    <div className="bg-white border rounded-2xl shadow-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300 p-4 flex flex-col gap-3">
+    <Link
+      to={`/app/${id}`}
+      className="bg-white border rounded-2xl shadow-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300 p-4 flex flex-col gap-3 cursor-pointer"
+    >
       {/* Image Section */}
       <figure className="aspect-square w-full overflow-hidden rounded-xl bg-gray-50 flex items-center justify-center">
         <img
@@ -32,7 +36,7 @@ const AppCard = ({ app }) => {
           <span>{ratingAvg.toFixed(1)}</span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

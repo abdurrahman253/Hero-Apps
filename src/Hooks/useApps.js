@@ -1,21 +1,31 @@
-import axios from "axios"
-import { useEffect, useState } from "react"
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const useApps = () => {
-    const [apps, setApps] = useState([])
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
+  const [apps, setApps] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
+  useEffect(() => {
+    const fetchApps = async () => {
+      try {
+        setLoading(true);
+        const res = await axios.get("/Apps.json");
+        if (Array.isArray(res.data)) {
+          setApps(res.data);
+        } else {
+          console.error("Apps.json is not an array");
+        }
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchApps();
+  }, []);
 
-    useEffect(() => {
-        setLoading(true)
-        axios('./Apps.json')
-        .then(data => setApps(data.data))
-        .catch(err => setError(err))
-        .finally(() => setLoading(false))
-    }, [])
+  return { apps, loading, error };
+};
 
-    return {apps, loading, error}
-}
-
-export default useApps 
+export default useApps;

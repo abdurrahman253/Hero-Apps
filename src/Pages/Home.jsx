@@ -3,8 +3,8 @@ import Banner from "./Banner";
 import States from "./States";
 import useApps from "../Hooks/useApps";
 import { Link } from "react-router-dom";
-import SkeletonLoader from "../Components/SkeletonLoader";
 import AppCard from "../Components/AppCard";
+import Spinner from "./Spinner";
 
 const Home = () => {
   const { apps, loading, error } = useApps();
@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <Banner />
       <States />
-
+  
       <section className="flex flex-col justify-center py-10 items-center">
         <h1 className="text-3xl font-semibold mb-1">Trending Apps</h1>
         <p className="text-gray-500 mb-6 text-center">
@@ -22,7 +22,7 @@ const Home = () => {
         </p>
 
         {loading ? (
-          <SkeletonLoader />
+          <Spinner />
         ) : error ? (
           <p className="text-red-500">{error}</p>
         ) : trendingApps.length === 0 ? (
