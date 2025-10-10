@@ -24,7 +24,7 @@ const AppCard = ({ app }) => {
       {/* Title */}
       <h3 className="text-lg font-semibold text-gray-800 truncate">{title}</h3>
 
-      {/* Info Row */}
+      {/* Info */}
       <div className="flex justify-between items-center text-gray-600 text-sm mt-auto">
         <div className="flex items-center gap-1">
           <FiDownload className="text-[#9F62F2]" />

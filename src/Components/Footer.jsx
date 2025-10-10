@@ -66,7 +66,7 @@ const Footer = () => {
 
   </div>
 
-  {/* --- Copyright --- */}
+  {/* Copyright  */}
   <div className="text-center text-sm text-gray-500 py-4 border-t border-gray-300">
     © {new Date().getFullYear()} HERO.IO — All rights reserved.
   </div>

@@ -6,20 +6,20 @@ import Spinner from "./Spinner";
 const Apps = () => {
   const { apps, loading, error } = useApps();
   const [search, setSearch] = useState("");
-  const [searchLoading, setSearchLoading] = useState(false); // 🔹 new state for search spinner
+  const [searchLoading, setSearchLoading] = useState(false);
   const [searchedApps, setSearchedApps] = useState([]);
 
-  // 🔹 Handle search with delay to simulate loading
+ 
   useEffect(() => {
-    setSearchLoading(true); // show spinner
+    setSearchLoading(true); 
     const delay = setTimeout(() => {
       const term = search.trim().toLowerCase();
       const filtered = term
         ? apps.filter((app) => app.title.toLowerCase().includes(term))
         : apps;
       setSearchedApps(filtered);
-      setSearchLoading(false); // hide spinner after filtering
-    }, 700); // small delay to feel like searching
+      setSearchLoading(false);
+    }, 700); 
 
     return () => clearTimeout(delay);
   }, [search, apps]);

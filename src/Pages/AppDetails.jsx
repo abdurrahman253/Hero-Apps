@@ -37,7 +37,7 @@ const AppDetails = () => {
     }
   };
 
-  // Prepare chart data in 5→1 star order
+  
   const chartData = [5,4,3,2,1].map(star => {
     const rating = app.ratings.find(r => r.name.startsWith(star.toString())) || { count: 0 };
     return { star, count: rating.count };
