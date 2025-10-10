@@ -9,31 +9,41 @@ const AppCard = ({ app }) => {
   return (
     <Link
       to={`/app/${id}`}
-      className="bg-white border rounded-2xl shadow-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300 p-4 flex flex-col gap-3 cursor-pointer"
+      className="bg-white border border-gray-100 rounded-3xl shadow-lg 
+                 hover:shadow-2xl hover:scale-[1.05] 
+                 transition-all duration-300 p-4 sm:p-5 
+                 flex flex-col gap-3 sm:gap-4 cursor-pointer 
+                 h-full w-full" 
     >
-      {/* Image Section */}
-      <figure className="aspect-square w-full overflow-hidden rounded-xl bg-gray-50 flex items-center justify-center">
+     
+      <figure className="aspect-square w-full overflow-hidden rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100">
         <img
-          className="w-full h-full object-contain"
+        
+          className="w-full h-full object-cover sm:object-contain" 
           src={image}
           alt={title || "App image"}
           loading="lazy"
         />
       </figure>
 
-      {/* Title */}
-      <h3 className="text-lg font-semibold text-gray-800 truncate">{title}</h3>
+      
+      <h3 className="text-lg sm:text-xl font-bold text-gray-900 truncate">
+        {title}
+      </h3>
 
-      {/* Info */}
-      <div className="flex justify-between items-center text-gray-600 text-sm mt-auto">
-        <div className="flex items-center gap-1">
-          <FiDownload className="text-[#9F62F2]" />
-          <span>{downloads.toLocaleString()}</span>
+    
+      <div className="flex justify-between items-center text-gray-500 text-sm mt-auto border-t border-gray-100 pt-3 sm:pt-4">
+        
+       
+        <div className="flex items-center gap-1 font-medium">
+          <FiDownload className="text-[#632EE3] h-4 w-4" /> 
+          <span className="text-gray-700">{downloads.toLocaleString()}</span>
         </div>
 
-        <div className="flex items-center gap-1">
-          <IoMdStar className="text-yellow-500" />
-          <span>{ratingAvg.toFixed(1)}</span>
+        
+        <div className="flex items-center gap-1 font-medium">
+          <IoMdStar className="text-yellow-400 h-4 w-4" /> 
+          <span className="text-gray-700">{ratingAvg.toFixed(1)}</span>
         </div>
       </div>
     </Link>

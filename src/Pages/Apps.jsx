@@ -26,7 +26,7 @@ const Apps = () => {
   }, [search, apps]);
 
   return (
-    <div className="p-5 max-w-7xl mx-auto">
+    <div className="p-5 max-w-7xl mx-auto">s
     
       <div className="text-center max-w-3xl mx-auto mt-10 px-4">
   {/* Title with icon */}
@@ -42,7 +42,7 @@ const Apps = () => {
   </p>
 </div>
 
-      {/* Header + Search */}
+      {/* Header + Search */} 
       <div className="flex flex-col md:flex-row justify-between items-center mt-8 mb-6 gap-4">
         <h1 className="text-2xl font-semibold">
           ({searchedApps.length}) Apps Found

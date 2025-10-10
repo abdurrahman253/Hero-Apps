@@ -11,7 +11,7 @@ import Spinner from "./Spinner";
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading } = useApps();
-
+  
   const app = apps.find((a) => a.id === Number(id));
   const [installed, setInstalled] = useState(false);
 
@@ -139,42 +139,79 @@ const AppDetails = () => {
       </div>
         
 
+     
          {/* Chart Section */}
-      <div className="bg-white shadow-md rounded-3xl p-8">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6">App Ratings Distribution</h2>
-        <div className="flex items-center gap-4">
-          {/* Ratings Labels */}
-          <div className="flex flex-col justify-between h-56">
-            {chartData.map((d) => (
-              <span key={d.star} className="text-gray-700 font-semibold text-lg">{d.star}★</span>
-            ))}
-          </div>
+        <div className="bg-white shadow-2xl rounded-3xl p-6 sm:p-8 lg:p-10 border border-gray-100 w-full">
+  
+ 
+  <div className="mb-6 border-b border-gray-100 pb-4">
+    <h2 className="text-xl sm:text-2xl font-extrabold text-gray-900 tracking-tight">
+      App Ratings Distribution
+    </h2>
+    <p className="text-sm text-gray-500 mt-1">Total user ratings across all categories.</p>
+  </div>
 
-          {/* Bar Chart */}
-          <div className="flex-1 h-56">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                layout="vertical"
-                data={chartData}
-                margin={{ top: 0, right: 30, left: 0, bottom: 0 }}
-              >
-                <XAxis type="number" hide />
-                <YAxis type="category" dataKey="star" hide />
-                <Tooltip cursor={{ fill: "#f3f4f6" }} formatter={(value) => value.toLocaleString()} />
-                <Bar dataKey="count" fill="#9F62F2" radius={[10,10,10,10]}>
-                  <LabelList 
-                    dataKey="count" 
-                    position="right" 
-                    formatter={(value) => value.toLocaleString()} 
-                    fill="#1F2937"
-                    fontWeight={600}
-                  />
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
+  <div className="flex items-center gap-4 sm:gap-6">
+    
+    
+    <div className="flex flex-col justify-between h-56 sm:h-64 md:h-72">
+      {chartData.map((d) => (
+       
+        <span key={d.star} className="text-gray-800 font-bold text-lg">
+          {d.star}★
+        </span>
+      ))}
+    </div>
+
+    
+    <div className="flex-1 h-56 sm:h-64 md:h-72">
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart
+          layout="vertical"
+          data={chartData}
+          
+          margin={{ top: 0, right: 40, left: 10, bottom: 0 }} 
+        >
+          
+          <defs>
+            <linearGradient id="colorCount" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#9F62F2" stopOpacity={1} />
+              <stop offset="100%" stopColor="#632EE3" stopOpacity={1} />
+            </linearGradient>
+          </defs>
+
+          <XAxis type="number" hide />
+          <YAxis type="category" dataKey="star" hide />
+          
+        
+          <Tooltip 
+            cursor={false} 
+            contentStyle={{ 
+              borderRadius: '8px', 
+              border: '1px solid #e5e7eb', 
+              background: 'white', 
+              padding: '8px' 
+            }}
+            formatter={(value) => [`${value.toLocaleString()} Votes`, 'Count']} 
+          />
+          
+          
+          <Bar dataKey="count" fill="url(#colorCount)" radius={[6, 6, 6, 6]}>
+            <LabelList 
+              dataKey="count" 
+              position="right" 
+              formatter={(value) => value.toLocaleString()} 
+              fill="#1F2937"
+              fontSize={14}
+              fontWeight={700}
+            />
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+  </div>
         </div>
-      </div>
+
 
       {/* Description Section */}
       <div className="bg-white shadow-md rounded-3xl p-8 space-y-4">

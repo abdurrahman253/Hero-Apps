@@ -6,20 +6,25 @@ import { Toaster } from 'react-hot-toast';
 
 const MainLayout = () => {
     return (
-        <div className="flex flex-col min-h-screen bg-gray-50">
-
+       
+        <div className="flex flex-col min-h-screen h-full bg-gray-50 m-0">
             
             <Navbar />
 
-           
-            <main className="flex-grow mx-auto lg:max-w-[calc(100%-80px)] w-full px-4 md:px-8 lg:px-12 py-4 md:py-8 lg:py-12">
-                <Outlet />
-
-                <Toaster
-    position="top-center"
-    reverseOrder={false}
-    gutter={12}
-    toastOptions={{
+        
+            <main className="flex-grow w-full">
+                
+                
+                <div className="mx-auto lg:max-w-[calc(100%-80px)] w-full 
+                                px-4 md:px-8 lg:px-12 py-4 md:py-8 lg:py-12">
+                    <Outlet />
+                </div>
+                
+               <Toaster
+                  position="top-center"
+                  reverseOrder={false}
+                  gutter={12}
+                  toastOptions={{
         className: 'shadow-2xl rounded-3xl p-4 font-semibold text-white',
         duration: 4000,
         style: {
@@ -47,13 +52,16 @@ const MainLayout = () => {
         },
     }}
 />
-
+               
             </main>
-
-           
+            
             <Footer />
         </div>
     );
 };
 
 export default MainLayout;
+
+
+
+
