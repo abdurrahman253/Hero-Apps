@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import useApps from "../Hooks/useApps";
 import { FiDownload } from "react-icons/fi";
@@ -8,24 +8,57 @@ import { getInstalledApps, saveInstalledApp } from "../Utils/localStorage";
 import toast from "react-hot-toast";
 import Spinner from "./Spinner";
 
-
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading } = useApps();
 
   const app = apps.find((a) => a.id === Number(id));
+  const [installed, setInstalled] = useState(false);
 
-  const [installed, setInstalled] = useState(
-    app ? getInstalledApps().some(a => a.id === app.id) : false
-  );
 
-  if (loading) return <Spinner />;;
-  if (!app)
+  useEffect(() => {
+    if (app) {
+      const isInstalled = getInstalledApps().some(a => a.id === app.id);
+      setInstalled(isInstalled);
+    }
+  }, [app]);
+
+  if (loading) return <Spinner />;
+
+  if (!app) {
     return (
-      <p className="text-center py-20 text-red-500 text-lg">
-        App not found 😢
-      </p>
+      <div className="flex flex-col items-center justify-center min-h-[70vh] px-4 py-16 text-center bg-gray-50 border-t border-b border-gray-200">
+        <svg
+          className="w-16 h-16 text-[#632EE3] mb-6 opacity-75"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+          />
+        </svg>
+        <h1 className="text-4xl font-extrabold text-gray-900 mb-3">
+          404 | App Not Found
+        </h1>
+        <p className="text-gray-500 text-lg mb-8 max-w-lg">
+          We couldn't find the application you're looking for. It may have been
+          removed or the address might be incorrect.
+        </p>
+        <Link
+          to="/"
+          className="inline-flex items-center px-8 py-3 text-base font-medium rounded-lg text-white transition-all duration-300
+                     bg-[#632EE3] hover:bg-[#5225c2] shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-[#632EE3]/50"
+        >
+          Go to Homepage
+        </Link>
+      </div>
     );
+  }
 
   const { description, image, downloads, reviews, title, ratingAvg, companyName, size } = app;
 
@@ -37,7 +70,6 @@ const AppDetails = () => {
     }
   };
 
-  
   const chartData = [5,4,3,2,1].map(star => {
     const rating = app.ratings.find(r => r.name.startsWith(star.toString())) || { count: 0 };
     return { star, count: rating.count };
@@ -91,7 +123,7 @@ const AppDetails = () => {
             </div>
           </div>
 
-          {/* Install Button */}
+          {/* ✅ Persistent Install Button */}
           <div className="pt-4">
             <button
               onClick={handleInstall}
@@ -105,8 +137,9 @@ const AppDetails = () => {
           </div>
         </div>
       </div>
+        
 
-      {/* Chart Section */}
+         {/* Chart Section */}
       <div className="bg-white shadow-md rounded-3xl p-8">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">App Ratings Distribution</h2>
         <div className="flex items-center gap-4">
@@ -148,8 +181,12 @@ const AppDetails = () => {
         <h2 className="text-2xl font-bold text-gray-800">Description</h2>
         <p className="text-gray-600 leading-relaxed">{description}</p>
       </div>
+      
     </div>
   );
 };
 
 export default AppDetails;
+
+
+

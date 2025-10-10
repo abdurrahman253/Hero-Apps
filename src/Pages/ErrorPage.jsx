@@ -10,7 +10,7 @@ const ErrorPage = ({ error }) => {
       <main className="flex flex-col flex-grow justify-center items-center text-center px-6 py-10 bg-gray-50">
         {/* Error  */}
         <img
-          src="/src/assets/error-404.png"
+          src="/error-404.png"
           alt="Error"
           className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain mb-8 animate-fadeIn"
         />

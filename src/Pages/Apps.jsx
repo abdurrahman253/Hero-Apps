@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import useApps from "../Hooks/useApps";
 import AppCard from "../Components/AppCard";
 import Spinner from "./Spinner";
+import { IoIosApps } from "react-icons/io";
 
 const Apps = () => {
   const { apps, loading, error } = useApps();
@@ -26,16 +27,20 @@ const Apps = () => {
 
   return (
     <div className="p-5 max-w-7xl mx-auto">
-      {/* Title + Subtitle */}
-      <div className="text-center max-w-2xl mx-auto mt-10 px-4">
-        <h1 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent leading-tight tracking-wide">
-          Our All Applications
-        </h1>
-        <p className="text-gray-600 text-base md:text-lg mt-4 font-medium leading-relaxed">
-          Discover innovative apps built with precision, performance, and purpose.
-          Engineered for millions — tailored for your everyday experience.
-        </p>
-      </div>
+    
+      <div className="text-center max-w-3xl mx-auto mt-10 px-4">
+  {/* Title with icon */}
+  <h1 className="flex sm:flex-row items-center justify-center gap-3 text-2xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-wide bg-gradient-to-r from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent">
+    <span>Our All Applications</span>
+    <IoIosApps className="text-[#9F62F2] w-10 h-10 sm:w-12 sm:h-12 transition-transform duration-300 hover:scale-110" />
+  </h1>
+
+  {/* Subtitle */}
+  <p className="text-gray-600  sm:text-lg md:text-xl mt-4 ,lg:font-medium leading-relaxed md:max-w-2xl mx-auto">
+    Discover innovative apps built with precision, performance, and purpose.  
+    Engineered for millions — tailored for your everyday experience.
+  </p>
+</div>
 
       {/* Header + Search */}
       <div className="flex flex-col md:flex-row justify-between items-center mt-8 mb-6 gap-4">

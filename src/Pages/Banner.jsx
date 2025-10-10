@@ -27,7 +27,7 @@ const Banner = () => {
       href="https://play.google.com/store/apps?hl=en"
       className="flex items-center justify-center gap-3 bg-gray-100 hover:bg-gray-200 px-5 py-3 rounded-lg shadow-md transition-all duration-300 w-full sm:w-auto"
     >
-      <img src="/src/assets/playStore.png" alt="Google Play" className="w-6 h-6 sm:w-8 sm:h-8" />
+      <img src="/playStore.png" alt="Google Play" className="w-6 h-6 sm:w-8 sm:h-8" />
       <span className="font-semibold text-gray-800 text-sm sm:text-base">Google Play</span>
     </a>
 
@@ -36,7 +36,7 @@ const Banner = () => {
       href="https://www.apple.com/app-store/"
       className="flex items-center justify-center gap-3 bg-gray-100 hover:bg-gray-200 px-5 py-3 rounded-lg shadow-md transition-all duration-300 w-full sm:w-auto"
     >
-      <img src="/src/assets/appStore.png" alt="App Store" className="w-6 h-6 sm:w-8 sm:h-8" />
+      <img src="/appStore.png" alt="App Store" className="w-6 h-6 sm:w-8 sm:h-8" />
       <span className="font-semibold text-gray-800 text-sm sm:text-base">App Store</span>
     </a>
   </div>
@@ -44,7 +44,7 @@ const Banner = () => {
    {/* Hero image */}
    <div className=' max-w-[320px] sm:max-w-[500px] md:max-w-[650px] lg:max-w-[800px] xl:max-w-[900px] mt-6 mx-auto'>
     <img
-     src="/src/assets/hero.png"
+     src="/hero.png"
      alt="Hero"
      className='w-full max-w-full h-auto object-contain'
      />

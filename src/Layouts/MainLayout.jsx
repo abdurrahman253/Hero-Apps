@@ -16,30 +16,38 @@ const MainLayout = () => {
                 <Outlet />
 
                 <Toaster
-                    position="top-center"
-                    reverseOrder={false}
-                    gutter={12}
-                    toastOptions={{
-                        className: 'shadow-xl rounded-2xl bg-white border-l-4 border-green-500 p-4 text-gray-900 font-semibold',
-                        duration: 4000,
-                        style: {
-                            fontSize: '16px',
-                            minWidth: '300px',
-                            maxWidth: '350px',
-                            boxShadow: '0 8px 20px rgba(0,0,0,0.12)',
-                        },
-                        success: {
-                            icon: '✅',
-                            className: 'bg-gradient-to-r from-green-100 to-green-50 border-l-4 border-green-500',
-                        },
-                        error: {
-                            duration: 0,
-                        },
-                        loading: {
-                            duration: 0,
-                        },
-                    }}
-                />
+    position="top-center"
+    reverseOrder={false}
+    gutter={12}
+    toastOptions={{
+        className: 'shadow-2xl rounded-3xl p-4 font-semibold text-white',
+        duration: 4000,
+        style: {
+            fontSize: '16px',
+            minWidth: '320px',
+            maxWidth: '400px',
+            boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+        },
+        success: {
+            icon: '✅',
+            className: 'bg-gradient-to-r from-green-400 via-green-300 to-green-200 border-l-4 border-green-600',
+        },
+        error: {
+            icon: '❌',
+            className: 'bg-gradient-to-r from-red-400 via-red-300 to-red-200 border-l-4 border-red-600',
+            duration: 5000,
+        },
+        loading: {
+            icon: '⏳',
+            className: 'bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 border-l-4 border-blue-600',
+            duration: 0,
+        },
+        successStyle: {
+            transition: 'transform 0.2s',
+        },
+    }}
+/>
+
             </main>
 
            

@@ -1,8 +1,8 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { FaAppStore } from "react-icons/fa6";
 import { MdInstallDesktop } from "react-icons/md";
+import { NavLink } from 'react-router';
 
 
 const Navbar = () => {
@@ -101,7 +101,7 @@ const Navbar = () => {
      className="flex ml-4 md:ml-4 lg:ml-0 items-center gap-2 text-xl font-semibold text-gray-800 hover:text-[#632EE3] transition-colors duration-300"> 
       <img
       className='w-10 h-10 object-contain'
-      src="/src/assets/logo.png" 
+      src="/logo.png" 
       alt="Hero.io Logo" 
       />
       <span>HERO.IO</span>
@@ -184,7 +184,7 @@ const Navbar = () => {
           rel='noopener noreferrer'
           className="flex items-center gap-2 px-4 py-2 rounded-full text-base md:text-lg font-semibold text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
           <img
-          src="/src/assets/github.png.png"
+          src="/github.png.png"
           alt="GitHub"
           className='w-5 h-5 md:w-7 md:h-7 object-contain'
           />
