@@ -26,7 +26,7 @@ const Apps = () => {
   }, [search, apps]);
 
   return (
-    <div className="p-5 max-w-7xl mx-auto">s
+    <div className="p-5 max-w-7xl mx-auto">
     
       <div className="text-center max-w-3xl mx-auto mt-10 px-4">
   {/* Title with icon */}
